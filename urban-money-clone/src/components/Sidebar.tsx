@@ -40,7 +40,8 @@ const menuItems = [
 ];
 
 const bottomMenuItems = [
-  { name: "LOGIN", href: "/login", icon: User },
+  { name: "SIGN IN", href: "/auth/login", icon: User },
+  { name: "SIGN UP", href: "/auth/signup", icon: User },
   { name: "TRACK", href: "/track", icon: Truck },
   { name: "RETURNS", href: "/returns", icon: Package },
   { name: "WISHLIST", href: "/wishlist", icon: Heart },

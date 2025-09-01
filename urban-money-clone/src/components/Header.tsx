@@ -71,9 +71,15 @@ export default function Header() {
               </Link>
 
               {/* User Account - Desktop only */}
-              <Link href="/account" className="hidden md:block p-1.5 text-gray-700 hover:text-black transition-colors">
-                <User size={16} />
-              </Link>
+              <div className="hidden md:flex items-center space-x-2">
+                <Link href="/auth/login" className="text-gray-700 hover:text-black transition-colors text-sm font-medium">
+                  Sign In
+                </Link>
+                <span className="text-gray-300">|</span>
+                <Link href="/auth/signup" className="text-gray-700 hover:text-black transition-colors text-sm font-medium">
+                  Sign Up
+                </Link>
+              </div>
 
               {/* Shopping Cart */}
               <Link href="/cart" className="p-1.5 text-gray-700 hover:text-black transition-colors relative">
